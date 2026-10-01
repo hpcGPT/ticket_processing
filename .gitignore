@@ -1,0 +1,15 @@
+
+venv*/
+__pycache__/
+
+logs/
+*.log
+*.err
+
+hpc_agentbench/pipeline_outputs/
+hpc_agentbench/tickets_combines.json
+qa_pairs*.json
+qa_pairs*.jsonl
+top_250_qa*.json
+top250_tickets.*
+*.csv
