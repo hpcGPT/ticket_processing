@@ -72,7 +72,7 @@ and answer >= 30 words.
 
 ```bash
 mkdir -p logs
-sbatch --account=<PROJECT> slurm/judge.sh
+sbatch slurm/judge.sh
 ```
 
 An LLM scores each pair and tags category, customer-facing, HPC-related and
