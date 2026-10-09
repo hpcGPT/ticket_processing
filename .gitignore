@@ -1,4 +1,3 @@
-
 venv*/
 __pycache__/
 
@@ -14,3 +13,6 @@ qa_pairs*.jsonl
 top_250_qa*.json
 top250_tickets.*
 *.csv
+
+# Allow the fake sample file
+!dummy_data/sample_tickets.csv
