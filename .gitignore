@@ -1,4 +1,3 @@
-
 venv*/
 __pycache__/
 
@@ -6,10 +5,14 @@ logs/
 *.log
 *.err
 
+scripts/tickets_combined.json
 hpc_agentbench/pipeline_outputs/
-hpc_agentbench/tickets_combines.json
+hpc_agentbench/tickets_combined.json
 qa_pairs*.json
 qa_pairs*.jsonl
 top_250_qa*.json
 top250_tickets.*
 *.csv
+
+# Allow the fake sample file
+!dummy_data/sample_tickets.csv

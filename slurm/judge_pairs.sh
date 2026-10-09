@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --account=PDE0050
+#SBATCH --account=<PROJECT_CODE>
 #SBATCH --job-name=qa_judge
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=1
@@ -19,7 +19,7 @@ INPUT=qa_pairs.json
 OUTPUT=qa_pairs_judged.jsonl
 
 module load vllm/0.23.0
-export HF_HOME=/fs/ess/PDE0050/vllm/.cache/huggingface
+export HF_HOME=/fs/ess/<PROJECT_CODE>/vllm/.cache/huggingface
 
 echo "=== launching vllm serve on port $PORT ==="
 

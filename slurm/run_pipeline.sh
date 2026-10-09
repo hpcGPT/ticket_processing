@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --account=PDE0050
+#SBATCH --account=<PROJECT_CODE>
 #SBATCH --job-name=qa_pipeline
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=1
@@ -32,7 +32,7 @@ if [ ! -f tickets_combined.json ]; then
 fi
 
 module load vllm/0.23.0
-export HF_HOME=/fs/ess/PDE0050/vllm/.cache/huggingface
+export HF_HOME=/fs/ess/<PROJECT_CODE>/vllm/.cache/huggingface
 
 echo "=== launching vllm serve on port $PORT ==="
 # OSC's vllm_start/vllm_stop wrappers only exist in interactive sessions,
